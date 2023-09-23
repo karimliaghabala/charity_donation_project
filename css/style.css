@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+:root{
+    font-size: calc(6px + 1vw);
+    --currentColor: #3bcf93;
+}
+/*<<<<<<<<<<<<<<<<<<<header section start>>>>>>>>>>>>>>>>>*/
+.containerBack{
+    background-color: black;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.left-header{
+    display: flex;
+    gap: 15px;
+}
+.left-header>a>i{
+    color: var(--currentColor);
+}
+.right-header>a{
+    text-decoration: none;
+    color: var(--currentColor);
+}
+/*<<<<<<<<<<<<<<<<<<<header section ended>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<<main section start>>>>>>>>>>>>>>>>>*/
+main{
+    /* background-image: url(../images/homePage/crowdfunding-featured1-1.png); */
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.7), rgba(0, 0, 255, 0.7)), /* İlk gradient (üzerine eklenecek) */
+    url('../images/homePage/crowdfunding-featured1-1.png');
+}
+main>.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-logo>img{
+    width: 7rem;
+    height: 7rem;
+}
+.right-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.right-info>.box>:first-child{
+    color: white;
+    font-size: 1rem;
+}
+.right-info>.box>:last-child{
+    color: var(--currentColor);
+    font-size: 0.7rem;
+}
+.right-info>a>button{
+    background-color: var(--currentColor);
+    border:none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    transition: 500ms;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
