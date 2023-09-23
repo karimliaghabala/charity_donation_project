@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Playfair Display", serif;
+}
+:root {
+  --currentColor: #3bcf93;
+}
+.containerRow {
+  background-color: black;
+  color: #fff;
+  padding: 5rem;
+}
+.containerRow p {
+  font-size: 0.75rem;
+  color: var(--currentColor);
+}
+:root {
+  font-size: calc(6px + 1vw);
+}
+.col i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.col a {
+  color: #ccc;
+  text-decoration: none;
+}
+.contactForm {
+  width: 30rem;
+  margin: 0 auto;
+}
+.contactHeader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  animation-name: text-focus-in;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.contactName {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--currentColor);
+}
+.contactIcons {
+  margin-top: 10rem;
+  background-color: #e6e4e4;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+.contactIcons a {
+  color: black;
+  transition: 0.5s;
+}
+.contactIcons a:hover {
+  transform: scale(1.2);
+}
