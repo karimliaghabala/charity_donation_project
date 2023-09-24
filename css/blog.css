@@ -1,0 +1,19 @@
+.row * {
+    width: fit-content !important     ;
+}
+/* --------------------------------------------------LEFT---------------------------------------------- */
+.left{
+    width: 60%;
+    margin-top: 20px;
+    padding: 20px;
+}
+.text{
+    padding: 20px
+}
+.description{
+    gap: 50px;
+}
+.text>.parag{
+    text-align: center;
+    padding-right: 200px;
+}
