@@ -237,3 +237,7 @@ section.text {
   color: #fff;
   text-decoration: none;
 }
+#contact-form h4{
+  text-align: center;
+  color: green;
+}
