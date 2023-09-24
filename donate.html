@@ -1,44 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate</title>
+  <link rel="stylesheet" href="./css/donate.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>salam</h1>
-</body>
-</html>
-=======
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donate</title>
-    <link rel="stylesheet" href="./css/donate.css" />
-  </head>
-  <body>
-    <div class="container">
-      <section class="section1 row">
-        <div class="left">
-          <img
-            class="image"
-            src="data:image/jpeg;base64,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"
-            alt="charity"
-          />
-        </div>
-        <div class="right">
-          <h2 class="headLeft">Lorem</h2>
-          <p class="textLeft">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti,
-            laboriosam veniam nemo earum exercitationem odit deserunt
-            voluptatibus autem odio repellat consectetur repellendus labore rem
-            iusto hic ipsam animi cupiditate! Voluptatum.
-          </p>
-          <button class="donate">Donate</button>
-        </div>
-      </section>
+
+  <div class="container justify-content-between gap-5 donateMain">
+    <div class="col-8 "
+      style="background-image: url(images/homePage/larm-rmah-AEaTUnvneik-unsplash-1200x755.jpg); background-position: center; background-size: cover;">
     </div>
-  </body>
+    <div class="col-4">
+      <h2>Providing access to safe water, sanitation, and hygiene</h2>
+      <p>The legal definition of a charitable organization (and of charity) varies between countries</p>
+      <div class="totalCharity d-flex gap-5">
+        <p>102%donated</p>
+        <p>Goal:300000$</p>
+      </div>
+      <div class="totalGoal d-flex gap-5">
+        <p>59 donors</p>
+        <p>$3086000 donated</p>
+      </div>
+      <div class="left d-flex gap-5">
+        <a href="#"><i class="fa-brands fa-facebook-f" style="color: #3bcf93;;"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram" style="color: #3bcf93;"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in" style="color: #3bcf93" ;></i></a>
+        <a href="#"><i class="fa-brands fa-twitter" style="color: #3bcf93;"></i></a>
+      </div>
+      <div class="buttons mt-3 gap-3">
+        <button class="btn myBtn mx-1" style="background-color: #3bcf93;">Donate now</button>
+        <button class="btn myBtn mx-2">Follow us</button>
+      </div>
+
+    </div>
+  </div>
+  <div class="container d-flex mt-4 ">
+    <div class="col-10">
+      <h3>How did this come to our attention?</h3>
+      <p style="border-bottom: 3px solid #3bcf93;">During the 19th century a profusion of charitable organizations
+        emerged to
+        alleviate the awful conditions of
+        the
+        working class in the slums. The Labourer’s Friend Society, chaired by Lord Shaftesbury in the United Kingdom in
+        1830, aimed to improve working-class conditions. It promoted, for example, the allotment of land to labourers
+        for
+        “cottage husbandry” that later became the allotment movement. In 1844 it became the first Model Dwellings
+        Company.
+
+        There was strong growth in municipal charities. The Brougham Commission led on to the Municipal Corporations Act
+        1835, which reorganized multiple local charities by incorporating them into single entities under supervision
+        from
+        local government.</p>
+      <h3 style="color: #3bcf93;">Clean water, sanitation, and hygiene education are basic necessities for
+        a healthy
+        environment and a
+        productive life and well life being</h3>
+      <div class="col-8  mt-5">
+        <div class="donateString d-flex gap-5 mt-3">
+          <div class="donateString1" ;>
+            <img src="images/homePage/cause-icon-clush.png" alt="">
+            <p style="font-weight: 900;">100k</p>
+            <h6>Children help</h6>
+          </div>
+          <div class="donateString2">
+            <img src="images/homePage/cause-icon-hand.png" alt="">
+            <p style="font-weight: 900;">18000</p>
+            <h6>Volunteers <br> Worldwide</h6>
+          </div>
+          <div class="donateString3">
+            <img src="images/homePage/cause-icon-menwomen.png" alt="">
+            <p style="font-weight: 900;">$100M</p>
+            <h6>Fund raised</h6>
+          </div>
+        </div>
+
+      </div>
+      <div class="classs d-flex">
+        <div>
+          <p class="mt-5">During the 19th century a profusion of charitable organizations emerged to alleviate the
+            awful
+            conditions
+            of the working class in the slums. The Labourer’s Friend Society, chaired by Lord Shaftesbury in the
+            United
+            Kingdom in 1830, aimed to improve working-class conditions.</p>
+          <div class="dataQuotes d-flex align-items-baseline gap-3 mt-5"> <i class="fa-solid fa-arrows-spin"
+              style="color: #3bcf93;"></i>
+            <p>Provide long-term campaign planning</p>
+          </div>
+          <div class="dataQuotes d-flex align-items-baseline gap-3"> <i class="fa-solid fa-arrows-spin"
+              style="color: #3bcf93;"></i>
+            <p>Reduce our long term administration costs</p>
+          </div>
+          <div class="dataQuotes d-flex align-items-baseline gap-3"> <i class="fa-solid fa-arrows-spin"
+              style="color: #3bcf93;"></i>
+            <p>Remain fiercely independent and unbiased</p>
+          </div>
+          <div class="dataQuotes d-flex align-items-baseline gap-3"> <i class="fa-solid fa-arrows-spin"
+              style="color: #3bcf93;"></i>
+            <p>Regular updates on what's happening in our priority campaigns</p>
+          </div>
+          <div class="dataQuotes d-flex align-items-baseline gap-3"> <i class="fa-solid fa-arrows-spin"
+              style="color: #3bcf93;"></i>
+            <p>Invitations to events and other exciting opportunities to take action</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="iframe d-flex gap-5 mt-5">
+        <iframe class="col-8" width="560" height="315"
+          src="https://www.youtube.com/embed/QFy8iPBYDLU?si=f_hbDLewm3bXQM5V" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <div class="contentText col-5 align-items-center" style="background-color: #3bcf93; padding: 1rem;">
+          <h3>THE STORY OF US</h3>
+          <p> How did this come to our attention?</p>
+          <p>The unincorporated association is the most common form of organization within the voluntary sector in
+            England and Wales.</p>
+        </div>
+      </div>
+      <div class="container">
+        <footer class="contactFooter mt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col sm-col-6">
+                <a href=" index.html"><img src="images/homePage/footer-logo.png" alt=""></a>
+                <p style="color: #ccc;" class="mt-5">Towards the end of the 19th century, with the advent of the New
+                  Liberalism
+                  and the innovative </p>
+                <div class="footerIcons d-flex mt-5 gap-3">
+                  <a href="#"><i class="fa-brands fa-facebook" style="color: #3bcf93"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter" style="color: #3bcf93"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin" style="color: #3bcf93"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram" style="color: #3bcf93"></i></a>
+                </div>
+              </div>
+              <div class="col">
+                <h2 style="color: #ccc;" class="mb-5">Contact info</h2>
+                <span style="color: #ccc;">Box 3233</span>
+                <br>
+                <span style="color:#ccc;">1810 Kings Way King Street, </span>
+                <br>
+                <span style="color:#ccc">5th Avenue, New York</span>
+                <div class="contactTelephone d-flex mt-4 align-items-center  gap-1 ">
+                  <a href=""> <i class="fa-solid fa-phone fa-beat m-2" style="color: #3bcf93;"></i></a>
+                  <p style="color: #ccc;">New York : 1800-2355-2356</p>
+                </div>
+                <div class="contactTelephone d-flex align-items-center">
+                  <a href=""><i class="fa-solid fa-tty fa-beat m-2" style="color: #3bcf93"></i></a>
+                  <p style="color: #ccc;"> London : 020-1455-236-34</p>
+                </div>
+                <div class="contactEmail d-flex align-items-center">
+                  <a href=""><i class="fa-solid fa-at fa-beat m-2 " style="color: #3bcf93;"></i></a>
+                  <p style="color: #ccc;">contact@Chariti.theme</p>
+                </div>
+
+              </div>
+              <div class="col footerIcons gap-1">
+                <h2 style="color: #ccc;" class="mb-5">Quick links</h2>
+                <i class="fa-solid fa-sitemap gap-1" style="color: #3bcf93;"></i> <a href="aboutUs.html">About our
+                  organization</a>
+                <hr style="color: #fff;">
+                <i class="fa-solid fa-handshake-angle gap-1" style="color: #3bcf93;"></i><a href="aboutUs.html">Become a
+                  Volunteer</a>
+                <hr style="color: #fff;">
+                <i class="fa-regular fa-hand-pointer gap-1" style="color: #3bcf93" ;></i> <a href="aboutUs.html">Case
+                  Studies</a>
+                <hr style="color: #fff;">
+                <i class="fa-solid fa-people-group gap-1" style="color: #3bcf93;"></i><a
+                  href="aboutUs.html">Sponsors</a>
+              </div>
+              <div class="col">
+                <h2 style="color: #ccc" class="mb-5">Urgent causes</h2>
+                <div class="footerImgs">
+                  <div class="footerImg1 d-flex gap-3">
+                    <img src="images/homePage/cause-education-150x150.jpg" alt="" class="footerImg">
+                    <p style="color: #fff">Second Hand Goods Donation</p>
+                  </div>
+                  <div class="footerImg2 d-flex gap-3">
+                    <img src="images/homePage/cause-thumbnail-donation-150x150.jpg" alt="" class="footerImg">
+                    <p style="color: #fff">Education needs</p>
+                  </div>
+                  <div class="footerImg3 d-flex gap-3">
+                    <img src="images/homePage/roman-nguyen-lPPkJ4NfQtQ-unsplash-150x150.jpg" alt="" class="footerImg">
+                    <p style="color: #fff">Save child Africa</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </footer>
+        <div class="footerEnd">
+          <div class="container justify-content-between d-flex">
+            <div class="footerLink " style="">
+              <a href="" style="border-right: 1px solid #ccc; padding-right:5px; ">Privacy</a>
+              <a href="">Terms of use</a>
+            </div>
+            <div style="color:#fff; font-size: 0.75rem; margin-top: 2px;">Copyright 2020 Chariti Theme, All Right
+              Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
 </html>
->>>>>>> be3f8a2a39792a7b11b58f2d524479892376b7c1
