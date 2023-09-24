@@ -1,13 +1,66 @@
-.row{
+:root {
+  font-size: calc(6px + 1vw);
+}
+:root {
+  --currentColor: #3bcf93;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.divider {
+  border-bottom: 1px solid black;
+}
+.myBtn {
+  border: none;
+  padding: 10px 20px;
+  background-color: #3bcf93;
+  color: white;
+  border-radius: 10px;
+  transition: 0.9s;
+}
+.myBtn:hover {
+  background-color: white;
+  color: var(--currentColor);
+  border: 1px solid var(--currentColor);
+  transform: scale(1.1);
+}
+.donateMain {
+  padding: 2rem;
   display: flex;
 }
-.left{
-  width: 60%;
+.donateString1, .donateString2, .donateString3{
+border: 4px solid  #3bcf93; 
+padding: 1rem;
+ text-align: center"
 }
-.left>img{
-  width: 200px; 
-  height: 200px;
+.contactFooter {
+  padding: 5rem;
+  background-color: rgb(34, 33, 33);
+  font-size: 0.75rem;
 }
-.right{
-  width: 40%;
+.footerIcons i {
+  transition: 0.5s;
+}
+.footerIcons i:hover {
+  transform: scale(1.1);
+}
+.footerImgs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footerImg {
+  width: 100px;
+}
+.footerEnd {
+  padding: 1rem;
+  background-color: rgb(14, 13, 13);
+}
+.footerLink a {
+  font-size: 0.75rem;
+  color: #fff;
+  text-decoration: none;
 }
