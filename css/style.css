@@ -16,7 +16,7 @@
 .containerBack {
   background-color: black;
 }
-.container {
+.aga-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,6 +145,12 @@ section.text {
       ),
       url("../images/homePage/-4f649b16160881200032313021210672697.jpg");
       padding: 50px 0;
+}
+.container-back>.news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
 }
 .left-news>a>button{
     background-color: var(--currentColor);
