@@ -1,61 +1,13 @@
-:root {
-  font-size: calc(6px + 1vw);
-}
-:root {
-  --currentColor: #3bcf93;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-}
-
-.container {
-  padding: 20px;
-}
-.section1 {
-  margin: 0 auto;
-  width: 80%;
-  height: 500px;
-}
-
-.left {
-  width: 60%;
-  padding: 20px;
-  background-color: red;
-}
-.right {
-  width: 40%;
-  padding: 25px;
-  background-color: blue;
-}
-
-.image {
-  width: 100%;
-  height: 100%;
-}
-
-.headLeft {
-  padding-bottom: 10px;
-}
-
-.row {
+.row{
   display: flex;
 }
-
-.donate {
-  margin: 100px 35%;
-  color: white;
-  border: 2px solid var(--currentColor);
-  width: 100px;
-  height: 30px;
-  background-color: var(--currentColor);
-  transition: all 0.25s;
-  &:hover{
-    cursor: pointer;
-    background-color: white;
-    color: var(--currentColor);
-    transition: all 0.25s;
-  }
+.left{
+  width: 60%;
+}
+.left>img{
+  width: 200px; 
+  height: 200px;
+}
+.right{
+  width: 40%;
 }
