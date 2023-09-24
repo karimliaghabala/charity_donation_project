@@ -5,28 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donate</title>
     <link rel="stylesheet" href="./css/donate.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="container">
-      <section class="section1 row">
+      <section class="section_1 row">
         <div class="left">
-          <img
-            class="image"
-            src="data:image/jpeg;base64,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"
-            alt="charity"
-          />
+          <img src="./images/donate/92190137.webp" alt="" />
         </div>
         <div class="right">
-          <h2 class="headLeft">Lorem</h2>
-          <p class="textLeft">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti,
-            laboriosam veniam nemo earum exercitationem odit deserunt
-            voluptatibus autem odio repellat consectetur repellendus labore rem
-            iusto hic ipsam animi cupiditate! Voluptatum.
-          </p>
-          <button class="donate">Donate</button>
+          <div class="top">
+            <h1>Providing access to safe water, sanitation, and hygiene</h1>
+            <h3>
+              The legal definition of a charitable organization (and of charity)
+              varies between countries
+            </h3>
+          </div>
+          <div class="bottom row">
+            <div class="first"><h2>59</h2><h4>Donors</h4></div>
+            <div class="second"><h2>$30,860.00</h2><h4>Donated</h4></div>
+          </div>
+          <a href="#">Donate</a>
+          <a href="#">Follow</a>
         </div>
       </section>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
